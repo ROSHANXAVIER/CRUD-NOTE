@@ -35,7 +35,7 @@ function Create() {
     }
   return (
     <div className='container'>
-      <h1>CREATE NOTE PAGE</h1>
+      <h1 className='head'>CREATE NOTE PAGE</h1>
       <form>
           <div className='form-group'>
               <input onChange={handleChange} name='title' value={input.title} className='form-control' placeholder='Date in DD/MM/YYYY format' ></input>

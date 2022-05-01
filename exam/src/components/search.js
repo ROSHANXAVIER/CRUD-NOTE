@@ -1,5 +1,5 @@
 import React from 'react'
-import './create.css'
+import './search.css'
 import axios from 'axios';
 import {useState} from 'react'
 function Search() {

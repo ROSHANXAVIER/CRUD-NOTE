@@ -35,7 +35,7 @@ function Update() {
     }
   return (
     <div className='cen'>
-       <h4>ENTER DATE AND CONTENT TO UPDATE</h4>
+       <h4 className='head'>ENTER DATE AND CONTENT TO UPDATE</h4>
       <form>
           <div className='form-group'>
               <input onChange={handleChange} name='title' value={input.title} className='form-control' placeholder='Date in DD/MM/YYYY format' ></input>
