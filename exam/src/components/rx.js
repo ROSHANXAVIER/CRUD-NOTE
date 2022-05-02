@@ -10,7 +10,7 @@ function Rx() {
   <div class="robots">
     <div class="android"> 
         
-      <div class="head"> 
+      <div class="heads"> 
         <div class="eyes"> 
         </div> 
       </div> 

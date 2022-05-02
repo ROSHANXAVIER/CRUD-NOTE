@@ -8,7 +8,7 @@
   }
   
   
-  .head, 
+  .heads, 
   .left_arm, 
   .torso, 
   .right_arm, 
@@ -18,7 +18,7 @@
     
   }
   
-  .head { 
+  .heads { 
     width: 200px; 
     margin: 0px  auto; 
     height: 150px; 
@@ -28,7 +28,7 @@
   } 
   
   
-  .head:hover {
+  .heads:hover {
   
   }
   
@@ -108,7 +108,7 @@
     width: 4em;
     position: relative;
     top: -15px;
-    left:-295px;  
+    left:-245px;  
     transform: translate(15.5em, 6em);
   }
   
