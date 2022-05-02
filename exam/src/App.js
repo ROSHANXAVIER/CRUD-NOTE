@@ -8,6 +8,7 @@ import Create from './components/create';
 import Search from './components/search';
 import Update from './components/update';
 import Delete from './components/delete';
+import Rx from './components/rx';
 function App() {
   return (
     <React.Fragment>
@@ -19,6 +20,7 @@ function App() {
            <Route path='/search' exact element={<Search/>}/>
            <Route path='/update' exact element={<Update/>}/>
            <Route path='/delete' exact element={<Delete/>}/>
+           <Route path='/power' exact element={<Rx/>}/>
         </Routes>
       </Router> 
     </React.Fragment>

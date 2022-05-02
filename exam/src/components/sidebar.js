@@ -1,5 +1,4 @@
 import './Sidebar.css';
-import {Link} from 'react-router-dom';
 import {MdCreate} from 'react-icons/md';
 import { FaSearch } from "react-icons/fa";
 import { MdOutlineUpdate ,MdDelete} from "react-icons/md";
@@ -61,7 +60,7 @@ function Sidebar() {
 
             <ul class="logout">
                 <li>
-                   <a href="#">
+                   <a href="/power">
                          <i class="fa fa-power-off fa-2x"></i>
                         <span class="nav-text">
                             POWERED BY ROSHAN XAVIER

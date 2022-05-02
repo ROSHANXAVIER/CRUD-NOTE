@@ -1,0 +1,187 @@
+.cen{
+    text-align: center;
+}
+
+.robots {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  .head, 
+  .left_arm, 
+  .torso, 
+  .right_arm, 
+  .left_leg, 
+  .right_leg {
+    background: linear-gradient(#fff, #fff, 70%, #aaa);
+    
+  }
+  
+  .head { 
+    width: 200px; 
+    margin: 0px  auto; 
+    height: 150px; 
+    border-radius: 99%;
+    margin-bottom: 10px;
+  
+  } 
+  
+  
+  .head:hover {
+  
+  }
+  
+  .upper_body { 
+    width: 300px; 
+    height: 150px;
+    display: flex;
+  } 
+  
+  .left_arm, .right_arm { 
+    width: 40px; 
+    height: 125px;
+    border-radius: 100px; 
+    position: relative;
+    background: linear-gradient(#fff, #fff, 90%, #aaa);
+  } 
+  
+  .left_arm { 
+    margin-right: 10px; 
+    transform: rotate(25deg);
+    position: relative;
+    left: 20px;
+    bottom: 4.3px;
+  } 
+  
+  .right_arm { 
+    margin-left: 10px; 
+    transform: rotate(-25deg);
+    bottom: 4.3px;
+    right: 20px;
+  } 
+  
+  .torso { 
+    width: 200px; 
+    height: 215px;
+    border-radius: 5px 5px 100px 100px; 
+    z-index: 1;
+  } 
+  
+  .lower_body { 
+    width: 200px; 
+    height: 200px;
+    /* This is another useful property. Hmm what do you think it does?*/
+    margin: 0 auto;
+    display: flex;
+  
+  } 
+  
+  .left_leg, .right_leg { 
+    width: 60px; 
+    height: 120px;
+    border-radius: 0 0 100px 100px; 
+    
+  } 
+  
+  .left_leg { 
+    margin-left: 25px; 
+    
+  } 
+  
+  .left_leg:hover {
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+     transform: rotate(20deg);
+  }
+  
+  .right_leg { 
+    margin-left: 30px; 
+  }
+  
+  /*Shut out to cssanimation.rocks! The code for the animated eyes came from this fantasic tuturial: https://cssanimation.rocks/baymax/*/
+  
+  .eyes{
+    border-bottom: .3rem solid #000;
+    width: 4em;
+    position: relative;
+    top: -15px;
+    left:-295px;  
+    transform: translate(15.5em, 6em);
+  }
+  
+  
+  .eyes::before{
+    background: #000;
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    width: 2em;
+    height: 2.1em;
+    left: -1.9em;
+    top: -1.3em;
+    transform: skewX(-4deg);
+    background: linear-gradient(to bottom, #efefef, #efefef 50%, #000 50%, #000);
+    background-position: 0 -100%;
+    background-size: 200% 200%;
+     
+  
+  }
+  
+  .eyes::after{
+    background: #000;
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    width: 2em; 
+    height: 2.1em;
+    right: -1.9em;
+    top: -1.3em;
+    transform: skewX(4deg);
+    background: linear-gradient(to bottom, #efefef, #efefef 50%, #000 50%, #000);
+    background-position: 0 -100%;
+    background-size: 200% 200%;
+  
+  }
+  
+  @keyframes blink {
+    0%, 50% {
+      background-position: 0 100%;
+    }
+    85%, 95% {
+      background-position: 0 50%;
+    }
+    100% {
+      background-position: 0 100%;
+    }
+    }
+  
+    .eyes::before {
+    animation: blink 6s infinite;
+    }
+    
+    .eyes::after {
+    animation: blink 6s 0.1s infinite;
+  
+    }
+  
+  .footer{
+    background: #8e9eab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    margin: 0px;
+  }
+  .footer p {
+    margin: 0px;
+    padding: 10px;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: #a00d1e;
+    
+  }
+  
