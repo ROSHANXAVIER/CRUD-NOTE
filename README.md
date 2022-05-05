@@ -1,6 +1,6 @@
 # CRUD-NOTE
 A notepad that performs CRUD operations on mongo DB to create , read , update and delete notes .
-It is a MERN stack application.
+It is a MERN stack application.The backend code is available here :- https://github.com/ROSHANXAVIER/express
 # You can view the applicatin here: https://exam-panel.vercel.app/
 
 
